@@ -1,4 +1,6 @@
 function calculateGrade() {
+    document.getElementById("overallgrade").innerHTML = "NaN %";
+    document.getElementById("overallgrade").style = "display:none;";
     var overallgrade = document.getElementById("overallgrade").innerHTML;
 
     var participationPercent = parseInt(document.getElementById("participationPercent").innerHTML);
