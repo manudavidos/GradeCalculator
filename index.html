@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Room Booking</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+   <script src="script.js"></script>
+ 
+   <div id="course">
+     <h1>CSE120 - Intro to the World of Programming</h1>
+     <ul>
+       <li>Participation - <span class="percent" id="participationPercent">10</span>%</li>
+       <li>HW - <span class="percent" id="hwPercent">10</span>%</li>
+       <li>Quiz - <span class="percent" id="quizPercent">10</span>%</li>
+       <li>Project M1 - <span class="percent" id="pm1Percent">35</span>%</li>
+       <li>Project M2 - <span class="percent" id="pm2Percent">35</span>%</li>
+     </ul>     
+   </div>
+   <div id="userandgrades">
+     <h1>
+       👤 
+       <span id="fn">Silvi</span>
+       <span id="ln">Abovyan</span>
+       <span id="overallgrade" title="Overall Grade" style="display: none;">NaN %</span>
+      </h1>
+     <!--<div class="info"><span id="messageforuser">✔ Well done, you got A+!</span></div>-->
+     <ul>
+       <li>Participation - <input class="percentinput" type="number" id="uparticipationPercent" name="uparticipationPercent" value="0">%</li>
+       <li>HW - <input class="percentinput" type="number" id="uhwPercent" name="uhwPercent" value="0">%</li>
+       <li>Quiz - <input class="percentinput" type="number" id="uquizPercent" name="uquizPercent" value="0">%</li>
+       <li>Project M1 - <input class="percentinput" type="number" id="upm1Percent" name="upm1Percent" value="0">%</li>
+       <li>Project M2 - <input class="percentinput" type="number" id="upm2Percent" name="upm2Percent" value="0">%</li>
+     </ul>
+     <button type="button" class="button" id="calculategradebtn" onclick="calculateGrade()">Calculate</button>
+
+   </div>
+ </body>
+</html>
