@@ -1,4 +1,9 @@
 function calculateGrade() {
+    document.getElementById("uparticipationPercent").style = "";
+    document.getElementById("uhwPercent").style = "";
+    document.getElementById("uquizPercent").style = "";
+    document.getElementById("upm1Percent").style = "";
+    document.getElementById("upm2Percent").style = "";
     document.getElementById("overallgrade").innerHTML = "NaN %";
     document.getElementById("overallgrade").style = "display:none;";
     var overallgrade = document.getElementById("overallgrade").innerHTML;
