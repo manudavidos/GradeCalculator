@@ -20,27 +20,28 @@ function calculateGrade() {
     var upm1Percent = parseFloat(document.getElementById("upm1Percent").value);
     var upm2Percent = parseFloat(document.getElementById("upm2Percent").value);
 
+    var isError = false;
     if (uparticipationPercent < 0 || uparticipationPercent > 100 ) {
         document.getElementById("uparticipationPercent").style = "background-color:red;";
-        finalgrade = "Error";
+        isError = true;
     } 
     if (uhwPercent < 0 || uhwPercent > 100 ) {
         document.getElementById("uhwPercent").style = "background-color:red;";
-        var finalgrade = "Error";
+        isError = true;
     } 
     if (uquizPercent < 0 || uquizPercent > 100 ) {
         document.getElementById("uquizPercent").style = "background-color:red;";
-        var finalgrade = "Error";
+        isError = true;
     } 
     if (upm1Percent < 0 || upm1Percent > 100 ) {
         document.getElementById("upm1Percent").style = "background-color:red;";
-        var finalgrade = "Error";
+        isError = true;
     } 
     if (upm2Percent < 0 || upm2Percent > 100 ) {
         document.getElementById("upm2Percent").style = "background-color:red;";
-        var finalgrade = "Error";
+        isError = true;
     }
-    if (finalgrade != "Error"){
+    if (!isError){
         finalgrade = uparticipationPercent/100 * participationPercent + 
         uhwPercent/100 * hwPercent + uquizPercent/100 * quizPercent + 
         upm1Percent/100 * pm1Percent + upm2Percent/100 * pm2Percent;
