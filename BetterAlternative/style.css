@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+   }
+   
+   body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+    
+   #course {
+    background-color: #808EBF;
+    color: #FFFFFF;
+    overflow: auto
+   }
+    
+   #userandgrades {
+    background-color: #ABBDFF;
+    color: #2B2F40;
+    padding: 5px 10px 5px 10px;
+    overflow: auto;
+   }
+    
+   
+   #course span, #userandgrades ul li span{
+    font-weight: bold;
+    background-color: #9AAAE6;
+    color: #FFFFFF;
+    margin-right: 5px;
+    padding: 4px;
+    border-radius: 5px;
+   }
+   
+   #course ul, #userandgrades ul {
+     list-style-type:square;
+   }
+   
+   #course ul li, #userandgrades ul li{
+     padding: 7px 0 7px 0;
+   }
+   
+   #course h1 {
+     background-color: #555F80;
+     padding-left: 10px;
+     color: #FFFFFF;
+   }
+   
+   #overallgrade {
+     font-weight: bold;
+     background-color: #9AAAE6;
+     color: #FFFFFF;
+     margin-left: 5px;
+     padding: 0 10px 0 10px;
+     border-radius: 5px;
+   }
+   
+   .info {
+     font-weight: bold;
+     background-color: #808EBF;
+     color: #FFFFFF;
+     margin: 10px 0 10px 0;
+     padding: 5px 10px 5px 10px;
+     border-radius: 5px;
+   }
+
+   .percentinput, .percentinput:focus{
+     width: 53px;
+     padding: 3px;
+     font-size: 23px;
+     border-radius: 5px;
+     background-color: #9AAAE6;
+     color: #FFFFFF;
+     border: 0;
+     outline: 0;
+   }
+
+   .button {
+      padding: 3px;
+      font-size: 23px;
+      border-radius: 5px;
+      background-color: #9AAAE6;
+      color: #FFFFFF;
+      border: 0;
+   }
